@@ -1,0 +1,115 @@
+.page-layout{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 70px 1fr 60px;
+    grid-template-areas: 
+        "header"
+        "sidebar main"
+        "footer footer";
+    gap: 12px;
+    min-height: 80vh;
+}
+.pl-header{grid-area: header;}
+.pl-sidebar{grid-area: sidebar;}
+.pl-main{grid-area: main;}
+.pl-footer{grid-area: footer;}
+
+
+.pl-header,
+.pl-sidebar,
+.pl-main,
+.pl-footer{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pl-header{
+    background-color: #1e1e2f;
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.pl-sidebar{
+   background-color: #6e6e8e;
+   color: #fff;
+}
+
+.pl-sidebar ul {
+    list-style:none;
+    padding: 0;
+}
+.pl-sidebar li {
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.pl-sidebar li:hover {
+    background-color: #ffcc00;
+    color: #1e1e2f;
+}
+.pl-main{
+    background-color: #1e1e2f;
+    color: #ccc;
+    text-align: center;
+}
+
+@media (max-width:700px){
+    .page-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #0f172a, #1e293b); /* Colorful gradient background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+/* Links Container */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Links Styling */
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.15); /* Light glowing background on hover */
+}
