@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.student-registration-container{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0px 16px;
+}
+
+.student-registration-form{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+.student-registration-form h2{
+    text-align: center;
+    color: #7872a6;
+    margin-bottom: 24px;
+
+}
+.item{
+    margin-bottom: 16px;
+}
+.item > label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+
+}
+
+.item input[type-"text"],
+.item input[type-"email"],
+.item input[type-"tel"],
+.item input[type-"password"],
+.item select{
+    width: 100% ;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: size 15px;
+    transition: border-color 0.2s;
+
+
+}
+
+.item input:focus,
+.item select:focus{
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
+}
+
+.re-btn{
+    padding: 12px;
+    background-color: #667eea;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.re-btn :hover{
+    background: #4b3fa0;
+}

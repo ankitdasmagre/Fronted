@@ -13,6 +13,7 @@ import Dashboard from './Components/dashboard/Dashboard';
 import Order from './Components/order/Order';
 import Customers from './Components/customers/Customers';
 import Setting from './Components/setting/Setting';
+import StudentRegistration from './Components/student-registration/StudentRegistration';
 
 import { BrowserRouter,Route, Routes} from 'react-router-dom';
 
@@ -27,6 +28,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/About" element={<About />} />
     <Route path="/Login" element={<Login />} />
+    <Route path="/StudentRegistration" element={<StudentRegistration />} />
     <Route path="/Contact" element={<Contact/>} />
     {/* <Route path="/Layout" element={<Layout/>} /> */}
     <Route path="/Layout1" element={<Layout1/>}/>
